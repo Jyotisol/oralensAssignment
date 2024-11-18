@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, .h-primary {
+  font-size: 3em;
+  color: darkcyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#navbar {
+  background-color: #333;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar .item a {
+  color: white;
+  text-decoration: none;
+}
+
+.searchbar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar input {
+  padding: 10px;
+  width: 300px;
+}
+
+.searchbar button {
+  padding: 10px;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#home {
+  background-color: lightseagreen;
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+#gallery {
+  padding: 50px;
+}
+
+.gallery1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gallery-item {
+  width: 50em;
+  height: 50em;
+  margin: 10px;
+  text-align: center;
+  padding: 50px;
+}
+
+#services-container {
+  padding: 50px;
+}
+
+.service-box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  text-align: center;
+  margin: 20px;
+  padding-top: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: darkcyan;
+  border: none;
+  cursor: pointer;
+  color: white;
 }
